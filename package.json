@@ -1,0 +1,27 @@
+{
+  "name": "jackintheboxwebsiteclone",
+  "version": "1.0.0",
+  "description": "",
+  "source": "/src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@parcel/resolver-glob": "^2.7.0",
+    "parcel": "^2.7.0",
+    "process": "^0.11.10"
+  }
+}

@@ -1,0 +1,93 @@
+.navigationBar{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 80px;
+}
+
+.foodMenu{
+    display: flex;
+    align-items: center;
+    flex-basis: 700px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.logoContainer{
+    flex-basis: 100px;
+}
+
+.logo {
+    object-fit: contain;
+    width: 80px;
+}
+
+.itemOne{
+    color: rgb(129, 129, 129);
+    text-decoration: none;
+    display: inline-block;
+    flex-basis: 150px;
+}
+
+.itemTwo{
+    color: rgb(129, 129, 129);
+    text-decoration: none;
+    display: inline-block;
+    flex-basis: 250px;
+}
+
+.itemThree, .itemFour {
+    color: rgb(129, 129, 129);
+    text-decoration: none;
+    display: inline-block;
+    flex-basis: 200px;
+}
+
+.itemOne:hover, .itemTwo:hover,
+.itemThree:hover, .itemFour:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.navItem:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 200px;
+    color: rgb(129, 129, 129);
+}
+
+@media (max-width: 1000px){
+    .socialMedia{
+        display: none;
+    }
+}
+
+@media (max-width: 1100px){
+    .foodMenu{
+        font-size: 0.8rem;
+        flex-basis: 500px;
+    }
+    .logo{
+        width: 60px;
+    }
+    .logoContainer{
+        flex-basis: 100px;
+    }
+    .itemOne{
+        flex-basis: 80px;
+    }
+    .itemTwo{
+        flex-basis: 200px;
+    }
+    .itemThree, .itemFour{
+        flex-basis: 120px;
+    }    
+}

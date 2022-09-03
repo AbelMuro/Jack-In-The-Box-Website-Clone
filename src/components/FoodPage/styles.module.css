@@ -4,7 +4,6 @@
     flex-basis: 85vh;          /* normally, the content of the container should be enough to fill the container and prevent it from shrinking*/
 }                            /* but the container's content is just text with no padding,*/
                            
-
 .redBox{
     display: flex;
     flex-direction: column;

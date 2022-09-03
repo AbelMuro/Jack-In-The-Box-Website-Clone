@@ -1,7 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: 50% 50%;
-    overflow-x: hidden;
+    overflow-x: scroll;
     gap: 10px;
 }
 

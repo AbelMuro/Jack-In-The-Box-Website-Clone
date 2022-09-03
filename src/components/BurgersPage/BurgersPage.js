@@ -3,8 +3,6 @@ import images from './images/*.png'
 import styles from './styles.module.css';
 
 function BurgersPage(){
-
-
     return(
         <div className={styles.container}> 
             <div className={styles.title}>BURGERS</div>
@@ -26,38 +24,32 @@ function BurgersPage(){
             </div>
             <div className={styles.gridItem}>
                 <img src={images["Ultimate_Cheeseburger"]} className={styles.foodImage}/>     
-                <p >ULTIMATE CHEESEBURGER</p>
+                <p>ULTIMATE CHEESEBURGER</p>
             </div>          
             <div className={styles.gridItem}>
                 <img src={images["Bacon_Ultimate_CheeseBurger"]} className={styles.foodImage}/>
-                <p >BACON ULTIMATE CHEESEBURGER</p>
+                <p>BACON ULTIMATE CHEESEBURGER</p>
             </div>
             <div className={styles.gridItem}>
                 <img src={images["Jumbo_Jack"]} className={styles.foodImage}/>
-                <p >JUMBO JACK CHEESEBURGER</p>
+                <p>JUMBO JACK CHEESEBURGER</p>
             </div>
             <div className={styles.gridItem}>
                 <img src={images["Jumbo_Jack_NoCheese"]} className={styles.foodImage}/>
-                <p >JUMBO JACK</p>
+                <p>JUMBO JACK</p>
             </div>   
             <div className={styles.gridItem}>
                 <img src={images["Jr_Jumbo_Jack_NoCheese"]} className={styles.foodImage}/> 
-                <p >JR JUMBO JACK</p>
+                <p>JR JUMBO JACK</p>
             </div>  
             <div className={styles.gridItem}>
                 <img src={images["Jr_Jumbo_Jack"]} className={styles.foodImage}/>    
-                <p >JR JUMBO JACK CHEESEBURGER</p>  
+                <p>JR JUMBO JACK CHEESEBURGER</p>  
             </div>      
             <div className={styles.gridItem}>
                 <img src={images["Jr_Bacon_CheeseBurger"]} className={styles.foodImage}/>
-                <p >JR BACON CHEESEBURGER</p>
+                <p>JR BACON CHEESEBURGER</p>
             </div>
-            
-            
-                       
-             
-            
-
         </div>
     )
 }

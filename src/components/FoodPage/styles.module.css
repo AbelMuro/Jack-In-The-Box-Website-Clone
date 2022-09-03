@@ -59,4 +59,8 @@
         position: static;
         flex-basis: 30px;
     }
+
+    .whiteBox{
+        overflow-y: visible;
+    }
 }

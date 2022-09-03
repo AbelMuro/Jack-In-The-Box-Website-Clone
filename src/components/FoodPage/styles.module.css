@@ -3,7 +3,7 @@
     overflow: hidden;        /* we use 85vh instead of 85% because this entire container will shrink when the footer nav below gets expanded*/
     flex-basis: 85vh;          /* normally, the content of the container should be enough to fill the container and prevent it from shrinking*/
 }                            /* but the container's content is just text with no padding,*/
-                           
+
 .redBox{
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: rgb(223, 0, 0);
+    background-color: #e21737;
     position: relative
 }
 .itemTypes{
@@ -25,7 +25,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
 }
-.type:hover{
+.type:hover, .currentLink{
     background-color: white;
     color: red;
 }

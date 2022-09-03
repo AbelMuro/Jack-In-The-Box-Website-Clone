@@ -2,7 +2,7 @@ import React from 'react';
 import images from './images/*.png'
 import styles from './styles.module.css';
 
-function BurgersPage(){
+function BurgersMenu(){
     return(
         <div className={styles.container}> 
             <div className={styles.title}>BURGERS</div>
@@ -54,4 +54,4 @@ function BurgersPage(){
     )
 }
 
-export default BurgersPage;
+export default BurgersMenu;

@@ -1,3 +1,3 @@
-import LateNightPage from "./LateNightPage.js";
+import LateNightMenu from "./LateNightMenu.js";
 
-export default LateNightPage;
+export default LateNightMenu;

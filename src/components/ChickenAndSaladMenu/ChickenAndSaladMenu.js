@@ -2,7 +2,7 @@ import React from 'react';
 import images from './images/*.png';
 import styles from './styles.module.css';
 
-function ChickenAndSaladPage(){
+function ChickenAndSaladMenu(){
     return(
     <div className={styles.container}>
         <div className={styles.title}>CHICKEN {"&"} SALADS</div>
@@ -63,4 +63,4 @@ function ChickenAndSaladPage(){
 
 }
 
-export default ChickenAndSaladPage;
+export default ChickenAndSaladMenu;

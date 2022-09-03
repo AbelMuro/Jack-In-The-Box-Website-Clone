@@ -2,6 +2,7 @@ import React from 'react';
 import NavigationBar from './NavigationBar';
 import HomePage from './HomePage';
 import FoodPage from './FoodPage';
+import ItemDescriptionPage from './ItemDescriptionPage';
 import BreakfastMenu from './BreakfastMenu';
 import BurgersMenu from './BurgersMenu';
 import ChickenAndSaladMenu from './ChickenAndSaladMenu';
@@ -22,15 +23,15 @@ function App() {
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>
                     <Route path="/food" element={<FoodPage/>}> 
-                        <Route index element={<BurgersPage />}/>
-                        <Route path="/food/ChickenAndSalad" element={<ChickenAndSaladPage/>}/>
-                        <Route path="/food/TacosFriesSides" element={<TacosFriesSidesPage/>}/>
+                        <Route index element={<BurgersMenu />}/>
+                        <Route path="/food/ChickenAndSalad" element={<ChickenAndSaladMenu/>}/>
+                        <Route path="/food/TacosFriesSides" element={<TacosFriesSidesMenu/>}/>
                         <Route path="/food/Breakfast" element={<BreakfastMenu/>}/>
-                        <Route path="/food/LateNight" element={<LateNightPage/>}/>
-                        <Route path="/food/ShakesAndDesserts" element={<ShakesAndDessertsPage/>}/>
-                        <Route path="/food/Drinks" element={<DrinksPage/>}/>
+                        <Route path="/food/LateNight" element={<LateNightMenu/>}/>
+                        <Route path="/food/ShakesAndDesserts" element={<ShakesAndDessertsMenu/>}/>
+                        <Route path="/food/Drinks" element={<DrinksMenu/>}/>
                     </Route> 
-                    <Route path="/food/::choosenItem" element={""}/>
+                    <Route path="/food/:choosenItem" element={<ItemDescriptionPage/>}/>
                 </Routes>
                 <FooterNavigationBar/> 
             </BrowserRouter>

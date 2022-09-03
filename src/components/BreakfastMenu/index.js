@@ -1,3 +1,3 @@
-import BreakfastMenu from './BreakfastPageMenu.js';
+import BreakfastMenu from './BreakfastMenu.js';
 
 export default BreakfastMenu;

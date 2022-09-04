@@ -32,7 +32,6 @@ function BurgersMenu(){
                 link.removeEventListener("click", storeIntoLocalStorage);
             })
         }
-
     }, []) 
 
     return(

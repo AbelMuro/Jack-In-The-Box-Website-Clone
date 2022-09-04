@@ -3,28 +3,194 @@
     justify-content: center;
     align-items: center;
     height: 84vh;
-}
-.itemTitleImage{
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.itemInfo{    
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-
+    overflow: hidden;
 }
 .itemTitle{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3.5rem;
     color: black;
     font-weight: bold;
+    text-align: center;
 }
 .itemImage{
     object-fit: contain;
-    width: 500px;
+    height: 500px;
+}
+
+
+.whiteBox{
+    flex-basis: 50%;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 84vh;
+}
+
+.purpleAndRedBox{    
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.purpleBox{
+    flex-basis: 46vh;   
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/purple background.png");
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+}
+
+.itemDesc, .nutritionAndIngredients, .notAllMenuItems{
+    font-family: Roboto, Arial, sans-serif;
+    color: white;
+    padding: 10px 0px;
+}
+
+.itemDesc{
+    font-size: 1.3vw;
+    line-height: 1.8vw;
+    width: 70%;
+}
+.nutritionAndIngredients{
+    display: flex;
+    width: 20vw;
+    justify-content: space-evenly;
+}
+.nutritionAndIngredients div{
+    font-size: 1vw;
+    font-weight: 300;
+    text-decoration-line: underline;
+}
+.nutritionAndIngredients div:hover{
+    cursor: pointer;
+}
+
+.notAllMenuItems{
+    font-size: 1vw;
+}
+
+
+
+
+.redBox{
+    flex-basis: 38vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    width: 100%;
+}
+
+.left{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.orderNow{
+    line-height: 50px;
+    width: 200px;
+    color: white;
+    font-size: 3.5rem;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.onTheJackApp{
+    font-size: 1.5rem;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.blackButtons{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.appStoreButton, .googlePlayButton{
+    object-fit: contain;
+    width: 12.3vw;
+}
+.appStoreButton:hover, .googlePlayButton:hover{
+    cursor: pointer;
+}
+
+.right{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.jackImage{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    object-fit: contain;
+    height: 300px;
+}
+
+
+@media (min-width: 2600px){
+    .itemDesc{
+        font-size: 2rem;
+        width: 1200px;
+    }
+    .nutritionAndIngredients div, .notAllMenuItems{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .itemContainer{
+        flex-direction: column;
+        height: auto;
+    }
+    .whiteBox{
+        width: 100%
+    }
+    .itemDesc{
+        font-size: 1.2rem;
+        line-height: 20px;
+    }
+    .nutritionAndIngredients div, .notAllMenuItems{
+        font-size: 0.8rem;
+    }
+    .nutritionAndIngredients{
+        width: 250px;
+    }
+    .appStoreButton, .googlePlayButton{
+        width: 120px;
+    }
+    .jackImage{
+        height: 200px;
+    }
+    .orderNow{
+        font-size: 2.5rem;
+    }
+    .onTheJackApp{
+        font-size: 1.2rem;
+    }
+    .redBox{
+        flex-basis: 30vh;
+    }
+    .blackButtons{
+        width: 300px;
+    }
+
 }

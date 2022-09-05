@@ -2,7 +2,9 @@ import React from 'react';
 import NavigationBar from './NavigationBar';
 import HomePage from './HomePage';
 import FoodPage from './FoodPage';
+import OffersAndStuffPage from './OffersAndStuffPage'
 import ItemDescriptionPage from './ItemDescriptionPage';
+import LocationsPage from './LocationsPage';
 import BreakfastMenu from './BreakfastMenu';
 import BurgersMenu from './BurgersMenu';
 import ChickenAndSaladMenu from './ChickenAndSaladMenu';
@@ -32,6 +34,8 @@ function App() {
                         <Route path="/food/Drinks" element={<DrinksMenu/>}/>
                     </Route> 
                     <Route path="/food/:choosenItem" element={<ItemDescriptionPage/>}/>
+                    <Route path="/OffersAndStuff" element={<OffersAndStuffPage/>}/>
+                    <Route path="/LocationsPage" element={<LocationsPage />}/>
                 </Routes>
                 <FooterNavigationBar/> 
             </BrowserRouter>

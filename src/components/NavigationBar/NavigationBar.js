@@ -9,6 +9,12 @@ import styles from './styles.module.css';
 function NavigationBar() {
     const [,forceRender] = useState(0);
 
+    function changeNavBar(){
+        let navBar = document.querySelector()
+    }
+
+
+
     const selectedLink = (e) => {
         let navLinks = Array.from(document.querySelector("." + styles.foodMenu).children);
         navLinks.forEach((link) => {
@@ -17,6 +23,10 @@ function NavigationBar() {
         })
         e.target.classList.add(styles.currentLink);
         forceRender(1);
+
+        if(e.target.id == "changeNavBar"){
+            changeNavBar();
+        }
     }
 
     return(
@@ -31,16 +41,16 @@ function NavigationBar() {
                             <FontAwesomeIcon icon={faBurger}/> FOOD
                        </span>
                     </Link>
-                    <div className={styles.itemTwo} onClick={selectedLink}>
+                    <Link to="/OffersAndStuff" className={styles.itemTwo} onClick={selectedLink}>
                         <span className={styles.eventBubbling}> 
                             <FontAwesomeIcon icon={faTag}/> OFFERS {"&"} STUFF
                         </span>
-                    </div>
-                    <div className={styles.itemThree} onClick={selectedLink}> 
+                    </Link>
+                    <Link to="/LocationsPage" id="changeNavBar"className={styles.itemThree} onClick={selectedLink}> 
                         <span className={styles.eventBubbling}> 
                             <FontAwesomeIcon icon={faLocationDot}/> LOCATION
                         </span>
-                    </div>
+                    </Link>
                     <div className={styles.itemFour} onClick={selectedLink}>
                         <span className={styles.eventBubbling}> 
                             <FontAwesomeIcon icon={faCarSide}/> DELIVERY

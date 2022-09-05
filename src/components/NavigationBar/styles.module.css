@@ -25,24 +25,21 @@
     width: 80px;
 }
 
-.itemOne{
-    color: rgb(129, 129, 129);
-    text-decoration: none;
+.itemOne, .itemTwo, .itemThree, .itemFour{
+    color: rgb(129, 129, 129);   
+    text-decoration: none;  
     display: inline-block;
+}
+
+.itemOne{
     flex-basis: 150px;
 }
 
 .itemTwo{
-    color: rgb(129, 129, 129);
-    text-decoration: none;
-    display: inline-block;
     flex-basis: 250px;
 }
 
 .itemThree, .itemFour {
-    color: rgb(129, 129, 129);
-    text-decoration: none;
-    display: inline-block;
     flex-basis: 200px;
 }
 

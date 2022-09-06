@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from './styles.module.css';
-import {Outlet} from 'react-router-dom';
+import {Outlet, useNavigate} from 'react-router-dom';
 
 function LocationsPage(){
-    //const params = new URLSearchParams(window.location.search);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        navigate("/Locations/country");
+    },[])
 
     return(
         <main className={styles.locationsContainer}>

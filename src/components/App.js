@@ -41,7 +41,7 @@ function App() {
                     <Route path="/OffersAndStuff" element={<OffersAndStuffPage/>}/>
                     <Route path="/Locations" element={<LocationsPage />}>
                         <Route path="/Locations/country" element={<CountryPage/>}/>
-                        <Route path="/Locations/country/state" element={<StatePage/>}/>
+                        <Route path="/Locations/country/:state" element={<StatePage/>}/>
                         <Route path="/Locations/country/state/city" element={<CityPage/>}/>
                         <Route path="/Locations/country/state/city/restaurantInfo" element={<RestaurantInfoPage/>}/>
                     </Route>

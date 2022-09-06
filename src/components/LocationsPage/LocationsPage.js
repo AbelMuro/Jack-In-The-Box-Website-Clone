@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-import {Outlet, useNavigate} from 'react-router-dom';
+import {Outlet} from 'react-router-dom';
 
 function LocationsPage(){
     //const params = new URLSearchParams(window.location.search);

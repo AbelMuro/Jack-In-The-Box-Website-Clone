@@ -35,11 +35,13 @@ function App() {
                     </Route> 
                     <Route path="/food/:choosenItem" element={<ItemDescriptionPage/>}/>
                     <Route path="/OffersAndStuff" element={<OffersAndStuffPage/>}/>
-                    <Route path="/Locations" element={<LocationsPage />}/>
-                    <Route path="/Locations/:country" element={<></>}/>
-                    <Route path="/Locations/:country/:state" element={<></>}/>
-                    <Route path="/Locations/:country/:state/:city/" element={<></>}/>
-                    <Route path="/Locations/:country/:state/:city/:restaurantInfo" element={<></>}/>
+                    <Route path="/Locations" element={<LocationsPage />}>
+                        <Route path="/Locations/country" element={<></>}/>
+                        <Route path="/Locations/country/state" element={<></>}/>
+                        <Route path="/Locations/country/state/city" element={<></>}/>
+                        <Route path="/Locations/country/state/city/restaurantInfo" element={<></>}/>
+                    </Route>
+
                 </Routes>
                 <FooterNavigationBar/> 
             </BrowserRouter>

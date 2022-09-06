@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './styles.module.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {Outlet, useNavigate} from 'react-router-dom';
 
 function LocationsPage(){
-    const params = new URLSearchParams(window.location.search);
+    //const params = new URLSearchParams(window.location.search);
 
     return(
         <main className={styles.locationsContainer}>
@@ -23,6 +23,10 @@ function LocationsPage(){
                     accurate information.
                 </p>
             </div>
+            <div>
+                <Outlet/>
+            </div>
+
         </main>
     )
 

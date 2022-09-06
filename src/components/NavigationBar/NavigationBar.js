@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {Link} from 'react-router-dom';
 import {faBurger, faTag, faLocationDot, faCarSide} from '@fortawesome/free-solid-svg-icons';
@@ -7,10 +7,16 @@ import logo from './images/jack in the box logo.png';
 import styles from './styles.module.css';
 
 function NavigationBar() {
-    const [,forceRender] = useState(0);
 
-    function changeNavBar(){
-        let navBar = document.querySelector()
+    function changeNavBar(e){
+        let navBar = e.target.parentElement.parentElement;
+        let foodMenu = navBar.querySelector("." + styles.foodMenu);
+        let foodMenuItems = Array.from(foodMenu.children);
+        let socialMedia = navBar.querySelector("." + styles.socialMedia);
+        let socialMediaItems = socialMedia.children;
+        foodMenuItems.forEach((item) => {
+            item.style.color = "#545554";
+        })
     }
 
 
@@ -22,10 +28,9 @@ function NavigationBar() {
                 link.classList.remove(styles.currentLink);
         })
         e.target.classList.add(styles.currentLink);
-        forceRender(1);
-
+        
         if(e.target.id == "changeNavBar"){
-            changeNavBar();
+            changeNavBar(e);
         }
     }
 

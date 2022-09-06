@@ -65,6 +65,14 @@
     pointer-events: none;
 }
 
+
+/* new navigation bar that appears when user clicks on locations or delivery*/
+
+.newFoodMenu{
+    width: 900px;
+}
+
+
 @media (max-width: 1000px){
     .socialMedia{
         display: none;

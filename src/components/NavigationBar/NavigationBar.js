@@ -7,20 +7,6 @@ import logo from './images/jack in the box logo.png';
 import styles from './styles.module.css';
 
 function NavigationBar() {
-
-    function changeNavBar(e){
-        let navBar = e.target.parentElement.parentElement;
-        let foodMenu = navBar.querySelector("." + styles.foodMenu);
-        let foodMenuItems = Array.from(foodMenu.children);
-        let socialMedia = navBar.querySelector("." + styles.socialMedia);
-        let socialMediaItems = socialMedia.children;
-        foodMenuItems.forEach((item) => {
-            item.style.color = "#545554";
-        })
-    }
-
-
-
     const selectedLink = (e) => {
         let navLinks = Array.from(document.querySelector("." + styles.foodMenu).children);
         navLinks.forEach((link) => {
@@ -28,10 +14,7 @@ function NavigationBar() {
                 link.classList.remove(styles.currentLink);
         })
         e.target.classList.add(styles.currentLink);
-        
-        if(e.target.id == "changeNavBar"){
-            changeNavBar(e);
-        }
+        changeNavBar(e);
     }
 
     return(
@@ -51,12 +34,12 @@ function NavigationBar() {
                             <FontAwesomeIcon icon={faTag}/> OFFERS {"&"} STUFF
                         </span>
                     </Link>
-                    <Link to="/LocationsPage" id="changeNavBar"className={styles.itemThree} onClick={selectedLink}> 
+                    <Link to="/Locations" id="changeNavBar"className={styles.itemThree} onClick={selectedLink}> 
                         <span className={styles.eventBubbling}> 
                             <FontAwesomeIcon icon={faLocationDot}/> LOCATION
                         </span>
                     </Link>
-                    <div className={styles.itemFour} onClick={selectedLink}>
+                    <div id="changeNavBar" className={styles.itemFour} onClick={selectedLink}>
                         <span className={styles.eventBubbling}> 
                             <FontAwesomeIcon icon={faCarSide}/> DELIVERY
                         </span>

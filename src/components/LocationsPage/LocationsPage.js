@@ -9,7 +9,7 @@ function LocationsPage(){
                 <h1 className={styles.gridItemOne}>
                     JACK IN THE BOX
                 </h1>
-                <div classname={styles.gridItemTwo}>
+                <div className={styles.gridItemTwo}>
                     <p className={styles.hours}>
                         HOURS OF OPERATION
                     </p>

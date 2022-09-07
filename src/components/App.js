@@ -40,10 +40,10 @@ function App() {
                     <Route path="/food/:choosenItem" element={<ItemDescriptionPage/>}/>
                     <Route path="/OffersAndStuff" element={<OffersAndStuffPage/>}/>
                     <Route path="/Locations" element={<LocationsPage />}>
-                        <Route path="/Locations/country" element={<CountryPage/>}/>
-                        <Route path="/Locations/country/:state" element={<StatePage/>}/>
-                        <Route path="/Locations/country/state/city" element={<CityPage/>}/>
-                        <Route path="/Locations/country/state/city/restaurantInfo" element={<RestaurantInfoPage/>}/>
+                        <Route path="/Locations/select-country" element={<CountryPage/>}/>
+                        <Route path="/Locations/select-country/:country" element={<StatePage/>}/>
+                        <Route path="/Locations/select-country/:country/:state" element={<CityPage/>}/>
+                        <Route path="/Locations/select-country/:country/:state/:city" element={<RestaurantInfoPage/>}/>
                     </Route>
 
                 </Routes>

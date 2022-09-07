@@ -8,17 +8,15 @@ function CountryPage() {
     const navigate = useNavigate();
     let listArray = [];
 
-    const storeIntoLocalStorage = (e) => {
-        let clickedItem = e.target.innerHTML;
-        clickedItem = clickedItem.replaceAll(" ", "");
-        console.log(clickedItem);
-        localStorage.setItem(clickedItem, clickedItem);
-        navigate("/Locations/country/" + clickedItem);
+    const getSelectedItem = (e) => {
+        let selectedCountry = e.target.innerHTML;
+        selectedCountry = clickedItem.replaceAll(" ", "");
+        navigate("/Locations/select-country/" + selectedCountry);
     }
 
 
     for(let item in CountryData){
-        listArray.push(<a key={uuid()} className={styles.itemLinks} onClick={storeIntoLocalStorage}> {CountryData[item]}</a>)
+        listArray.push(<a key={uuid()} className={styles.itemLinks} onClick={getSelectedItem}> {CountryData[item]}</a>)
     }
 
     return(

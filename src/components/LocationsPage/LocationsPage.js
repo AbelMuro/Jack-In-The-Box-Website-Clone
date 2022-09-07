@@ -6,7 +6,7 @@ function LocationsPage(){
     const navigate = useNavigate();
 
     useEffect(() => {
-        navigate("/Locations/country");
+        navigate("/Locations/select-country");
     },[])
 
     return(

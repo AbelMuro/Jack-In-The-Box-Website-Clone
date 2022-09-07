@@ -5,10 +5,6 @@ import FoodPage from './FoodPage';
 import OffersAndStuffPage from './OffersAndStuffPage'
 import ItemDescriptionPage from './ItemDescriptionPage';
 import LocationsPage from './LocationsPage';
-import CountryPage from './CountryPage';
-import StatePage from './StatePage';
-import CityPage from './CityPage';
-import RestaurantInfoPage from './RestaurantInfoPage';
 import BreakfastMenu from './BreakfastMenu';
 import BurgersMenu from './BurgersMenu';
 import ChickenAndSaladMenu from './ChickenAndSaladMenu';
@@ -39,13 +35,7 @@ function App() {
                     </Route> 
                     <Route path="/food/:choosenItem" element={<ItemDescriptionPage/>}/>
                     <Route path="/OffersAndStuff" element={<OffersAndStuffPage/>}/>
-                    <Route path="/Locations" element={<LocationsPage />}>
-                        <Route path="/Locations/select-country" element={<CountryPage/>}/>
-                        <Route path="/Locations/select-country/:country" element={<StatePage/>}/>
-                        <Route path="/Locations/select-country/:country/:state" element={<CityPage/>}/>
-                        <Route path="/Locations/select-country/:country/:state/:city" element={<RestaurantInfoPage/>}/>
-                    </Route>
-
+                    <Route path="/Locations" element={<LocationsPage />}/>
                 </Routes>
                 <FooterNavigationBar/> 
             </BrowserRouter>

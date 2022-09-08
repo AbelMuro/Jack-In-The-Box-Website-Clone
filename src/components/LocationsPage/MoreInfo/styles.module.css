@@ -4,26 +4,39 @@
     width: 100vw;
     height: auto;
 }
+.flexItemTwo, .flexItemThree, 
+.flexItemFive, .flexItemSix, 
+.flexItemSeven, .flexItemEight{
+    padding: 40px;
+}
+
 .flexItemOne, .flexItemFour, .flexItemFive{
     background-color: #e21737;
 }
 
-.flexItemTwo, .flexItemThree, .flexItemFive, 
-.flexItemSix, .flexItemSeven, .flexItemEight{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-basis: 50%;
-    height: auto;
+.flexItemTwo, .flexItemThree, .flexItemSix, .flexItemSeven{
+    background-color: rgb(211, 211, 211)
 }
 
 .flexItemOne, .flexItemFour{
+    flex-basis: 50%;
+}
+
+.flexItemTwo, .flexItemThree, .flexItemFive, 
+.flexItemSeven, .flexItemEight{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-basis: 50%;
-    height: auto;
+}
+
+.flexItemSix{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 50%;
 }
 
 .applyButton{
@@ -31,17 +44,20 @@
     color: white;
     background-color: black;
     font-weight: bold;
+    padding: 1.1rem;
+    cursor: pointer;
 }
 
 .blackButtons{
     display: flex;
     width: 400px;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .buttonImage{
     object-fit: contain;
-    width: 100px;
+    width: 150px;
 }
 
 .images{
@@ -52,14 +68,39 @@
     width: 90%;
 }
 
-.title{
+.greyBoxTitle, .redBoxTitle{
     color: #545554;
     font-size: 2.4rem;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-.description{
-    padding: 50px;
+.redBoxTitle{
+    color:white;
+}
+
+.greyBoxTitle{
+    color: #545554;
+}
+
+.greyBoxDescription, .redBoxDescription, .listContainer{
+    padding: 50px 0px;
     font-size: 1.2rem;
+}
+
+.greyBoxDescription{
+    color:#545554;
+}
+
+.redBoxDescription{
+    color:white;
+}
+
+.jackLink{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-decoration: underline;
+    cursor: pointer;
 }

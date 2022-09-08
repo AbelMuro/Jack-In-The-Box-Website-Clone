@@ -36,6 +36,7 @@ function App() {
                     <Route path="/food/:choosenItem" element={<ItemDescriptionPage/>}/>
                     <Route path="/OffersAndStuff" element={<OffersAndStuffPage/>}/>
                     <Route path="/Locations" element={<LocationsPage />}/>
+
                 </Routes>
                 <FooterNavigationBar/> 
             </BrowserRouter>

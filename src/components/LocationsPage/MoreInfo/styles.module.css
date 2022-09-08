@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.flexItemOne, .flexItemTwo, .flexItemThree, .flexItemFour,
+.flexItemFive, .flexItemSix, .flexItemSeven, .flexItemEight{
+    flex-basis: 50%;
+}

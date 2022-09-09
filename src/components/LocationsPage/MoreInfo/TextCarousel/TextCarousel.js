@@ -3,7 +3,6 @@ import styles from './styles.module.css';
 
 function TextCarousel() {
 
-
     return(
         <main>
             <h2 className={styles.title}>

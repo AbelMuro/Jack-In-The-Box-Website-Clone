@@ -1,0 +1,44 @@
+.carouselContainer{
+    position: relative;
+    width: 500px;
+    height: auto;
+}
+
+.window{
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+.flexContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.nestedFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.left, .right{
+    position: absolute;
+}
+
+.left{
+    left: 0px;
+    top: 50%;
+}
+
+.right{
+    right: 0px;
+    top: 50%;
+}
+
+.eventBubbling{
+    pointer-events: none;
+}

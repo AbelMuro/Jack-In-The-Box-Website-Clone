@@ -1,19 +1,32 @@
 import React from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import styles from './styles.module.css';
 
 function TextCarousel() {
+
+
+    const moveSlides = (e) => {
+
+
+    }
 
     return(
         <main>
             <h2 className={styles.title}>
                 NEARBY JACK IN THE BOX LOCATIONS
             </h2>
-            <section className={CarouselContainer}>
-                <button className={styles.left}>
+            <section className={carouselContainer}>
+                
+                <button className={styles.left} onClick={moveSlides}>
+                    <span className={styles.eventBubbling}>
+                        <FontAwesomeIcon icon={faArrowLeft}/>                        
+                    </span>
                 </button>
+
                 <div className={styles.window}>
                     <div className={styles.flexContainer}>
-                        <div className={styles.nestedFlex}>
+                        <div className={[styles.nestedFlex, styles.currentSlide].join(" ")}>
                             <h3>
                                 JACK IN THE BOX PHOENIX
                             </h3>
@@ -54,11 +67,12 @@ function TextCarousel() {
                         </div>
 
                     </div>
-
                 </div>
 
-                <button className={styles.right}>
-
+                <button className={styles.right} onClick={moveSlides}>
+                    <span className={styles.eventBubbling}>
+                        <FontAwesomeIcon icon={faArrowRight}/>
+                    </span>
                 </button>
 
 
@@ -69,4 +83,4 @@ function TextCarousel() {
 
 }
 
-export default ImageCarousel;
+export default TextCarousel;

@@ -72,19 +72,19 @@ function MoreInfo() {
                 </h2>
                 <ul className={styles.listContainer}>
                     <li className={styles.listItem}>
-                        DRIVE THRU
+                        <span>DRIVE THRU</span>
                     </li>
                     <li className={styles.listItem}>
-                        BREAKFAST
+                        <span>BREAKFAST </span>
                     </li>
                     <li className={styles.listItem}>
-                        DESSERT
+                        <span>DESSERT</span>
                     </li>
                     <li className={styles.listItem}>
-                        DINNER
+                        <span>DINNER</span>
                     </li>
                     <li className={styles.listItem}>
-                        LUNCH
+                        <span>LUNCH </span>
                     </li>
                 </ul>
             </div>

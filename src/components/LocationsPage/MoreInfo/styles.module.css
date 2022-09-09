@@ -35,7 +35,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     flex-basis: 50%;
 }
 
@@ -84,9 +83,26 @@
     color: #545554;
 }
 
-.greyBoxDescription, .redBoxDescription, .listContainer{
+.greyBoxDescription, .redBoxDescription{
     padding: 50px 0px;
     font-size: 1.2rem;
+}
+
+.listContainer{
+    padding: 50px 0px 0px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.listContainer li:before{
+    content: "";
+    display: list-item;
+    position: absolute;
+}
+
+.listContainer li {
+    width: 50%;
+    display: inline-block
 }
 
 .greyBoxDescription{
@@ -103,4 +119,11 @@
     font-weight: 900;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.listItem{
+    color: red;
+}
+.listItem span{
+    color:#545554;
 }

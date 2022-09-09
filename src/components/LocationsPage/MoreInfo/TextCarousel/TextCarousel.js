@@ -6,6 +6,11 @@ import styles from './styles.module.css';
 function TextCarousel() {
 
 
+    const changeDot = () => {
+
+    }
+
+
     const moveSlides = (e) => {
         let leftOrRight = e.target.classList;
         let slideContainer = e.target.parentElement.querySelector("." + styles.flexContainer);
@@ -87,7 +92,11 @@ function TextCarousel() {
                         <FontAwesomeIcon icon={faArrowRight}/>
                     </span>
                 </button>
-
+                <nav className={styles.dotNav}>
+                    <div className={styles.dot} onClick={changeDot}></div>
+                    <div className={styles.dot} onClick={changeDot}></div>
+                    <div className={styles.dot} onClick={changeDot}></div>
+                </nav>
 
             </section>
         </main>

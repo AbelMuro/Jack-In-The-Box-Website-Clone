@@ -1,17 +1,19 @@
 .carouselContainer{
     position: relative;
     width: 500px;
-    height: auto;
 }
 
 .window{
+    position: relative;
     width: 500px;
-    height: auto;
+    height: 100px;
     overflow: hidden;
 }
 
 .flexContainer{
     position: absolute;
+    left: 0px;
+    transition: left 0.5s ease-in-out;
     display: flex;
     flex-direction: row;
     width: auto;
@@ -41,4 +43,8 @@
 
 .eventBubbling{
     pointer-events: none;
+}
+
+.currentSlide{
+    content: '';
 }

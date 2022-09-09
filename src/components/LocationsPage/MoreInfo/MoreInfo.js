@@ -1,4 +1,5 @@
 import React from 'react';
+import TextCarousel from './TextCarousel';
 import styles from './styles.module.css';
 import WeHiring from './images/WeHiring.jpg';
 import delivery from './images/delivery.jpg';
@@ -88,7 +89,9 @@ function MoreInfo() {
                     </li>
                 </ul>
             </div>
-            <div className={styles.flexItemSeven}>1</div>
+            <div className={styles.flexItemSeven}>
+                <TextCarousel/>
+            </div>
             <div className={styles.flexItemEight}>1</div>
         </main>
     )

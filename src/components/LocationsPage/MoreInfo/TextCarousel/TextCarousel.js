@@ -17,6 +17,12 @@ function TextCarousel() {
             currentSlide.classList.remove(styles.currentSlide);
             nextSlide.classList.add(styles.currentSlide);
         }
+        else if(leftOrRight == styles.left && currentSlide.previousElementSibling != null){
+            let prevSlide = currentSlide.previousElementSibling;
+            slideContainer.style.left = prevSlide.getAttribute("data-position") + "px";
+            currentSlide.classList.remove(styles.currentSlide);
+            prevSlide.classList.add(styles.currentSlide);
+        }
     }
 
     return(

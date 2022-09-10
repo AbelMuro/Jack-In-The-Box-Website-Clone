@@ -34,16 +34,16 @@ function NavigationBar() {
                             <FontAwesomeIcon icon={faTag}/> OFFERS {"&"} STUFF
                         </span>
                     </Link>
-                    <Link to="/Locations" id="changeNavBar"className={styles.itemThree} onClick={selectedLink}> 
+                    <Link to="/Locations" className={styles.itemThree} onClick={selectedLink}> 
                         <span className={styles.eventBubbling}> 
                             <FontAwesomeIcon icon={faLocationDot}/> LOCATION
                         </span>
                     </Link>
-                    <div id="changeNavBar" className={styles.itemFour} onClick={selectedLink}>
+                    <Link to="/Delivery" className={styles.itemFour} onClick={selectedLink}>
                         <span className={styles.eventBubbling}> 
                             <FontAwesomeIcon icon={faCarSide}/> DELIVERY
                         </span>
-                    </div>
+                    </Link>
                 </div>
 
                 <div className={styles.socialMedia}>

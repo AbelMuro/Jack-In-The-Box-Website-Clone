@@ -55,8 +55,8 @@ function TextCarousel() {
     }
 
     return(
-        <main>
-            <h2 className={styles.title}>
+        <main className={styles.flexBox}>
+            <h2 className={styles.locationsTitle}>
                 NEARBY JACK IN THE BOX LOCATIONS
             </h2>
             <section className={styles.carouselContainer}>
@@ -69,40 +69,40 @@ function TextCarousel() {
 
                 <div className={styles.window}>
                     <div className={styles.flexContainer}>
-                        <div className={[styles.nestedFlex, styles.currentSlide].join(" ")} data-position={0}>
-                            <h3>
+                        <div className={[styles.nestedFlex, styles.currentSlide].join(" ")} data-position={-20}>
+                            <h3 className={styles.title}>
                                 JACK IN THE BOX PHOENIX
                             </h3>
-                            <p>
-                                <span>
-                                    OPEN 24 HOURS
-                                </span>
-                                2645 X CAREFREE HWY<br/>
-                                PHOENIX, AZ 85085<br/>
-                                (623)587-9515 <br/>
+                            <p className={styles.hoursOpen}>
+                                OPEN 24 HOURS
+                            </p>                            
+                            <p className={styles.address}>
+                            2645 X CAREFREE HWY<br/>
+                            PHOENIX, AZ 85085<br/>
+                            (623)587-9515 <br/>
                             </p>
                         </div>
-                        <div className={styles.nestedFlex} data-position={-500}>
-                            <h3>
+                        <div className={styles.nestedFlex} data-position={-420}>
+                            <h3 className={styles.title}>
                                 JACK IN THE BOX PHOENIX
                             </h3>
-                            <p>
-                                <span>
-                                    OPEN 24 HOURS
-                                </span>
+                            <p className={styles.hoursOpen}>
+                                OPEN 24 HOURS
+                            </p>
+                            <p className={styles.address}>
                                 2113 W HAPPY VALEY RD<br/>
                                 PHOENIX, AZ 85085<br/>
                                 (623)869-5006<br/>
                             </p>
                         </div>
-                        <div className={styles.nestedFlex} data-position={-1000}>
-                            <h3>
+                        <div className={styles.nestedFlex} data-position={-820}>
+                            <h3 className={styles.title}>
                                 JACK IN THE BOX PHOENIX
                             </h3>
-                            <p>
-                                <span>
-                                    OPEN 24 HOURS
-                                </span>
+                            <p className={styles.hoursOpen}>
+                                OPEN 24 HOURS
+                            </p>
+                            <p className={styles.address}>
                                 2141 W DEER VALLEY RD<br/>
                                 PHOENIX, AZ 85027<br/>
                                 (623)582-0894<br/>
@@ -117,9 +117,9 @@ function TextCarousel() {
                     </span>
                 </a>
                 <nav className={styles.dotNav}>
-                    <div className={[styles.dot, styles.currentDot].join(" ")} onClick={updateSlideBasedOnDot} data-position={0}></div>
-                    <div className={styles.dot} onClick={updateSlideBasedOnDot} data-position={-500}></div>
-                    <div className={styles.dot} onClick={updateSlideBasedOnDot} data-position={-1000}></div>
+                    <div className={[styles.dot, styles.currentDot].join(" ")} onClick={updateSlideBasedOnDot} data-position={-20}></div>
+                    <div className={styles.dot} onClick={updateSlideBasedOnDot} data-position={-420}></div>
+                    <div className={styles.dot} onClick={updateSlideBasedOnDot} data-position={-820}></div>
                 </nav>
 
             </section>

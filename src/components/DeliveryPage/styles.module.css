@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.guyLookingAtPhone{
+    background-image: url("./images/guy\ looking\ at\ phone.jpg");
+    background-size: cover;
+    flex-basis: 50%;
+}
+

@@ -1,5 +1,6 @@
 import React from 'react';
 import TextCarousel from './TextCarousel';
+import MyGoogleMap from './MyGoogleMap';
 import styles from './styles.module.css';
 import WeHiring from './images/WeHiring.jpg';
 import delivery from './images/delivery.jpg';
@@ -7,12 +8,12 @@ import appStoreButton from './images/appStoreButton.png';
 import googlePlayButton from './images/googlePlayButton.png';
 
 
-function MoreInfo() {
+function MoreInfo(props) {
 
     return(
         <main className={styles.container}>
             <div className={styles.flexItemOne}>
-                <img src={WeHiring} className={styles.images}/>
+                <img src={WeHiring} className={styles.imageOne}/>
             </div>
             <div className={styles.flexItemTwo}>
                 <h2 className={styles.greyBoxTitle}>
@@ -45,7 +46,7 @@ function MoreInfo() {
                 </div>
             </div>
             <div className={styles.flexItemFour}>
-                <img src={delivery} className={styles.images}/>
+                <img src={delivery} className={styles.imageTwo}/>
             </div>
             <div className={styles.flexItemFive}>
                 <h2 className={styles.redBoxTitle}>
@@ -92,7 +93,19 @@ function MoreInfo() {
             <div className={styles.flexItemSeven}>
                 <TextCarousel/>
             </div>
-            <div className={styles.flexItemEight}>1</div>
+            <div className={styles.flexItemEight}>
+                <MyGoogleMap address={props.address}/>
+                <div className={styles.findJackNearYou}>
+                    <h2 className={styles.findJackTitle}>
+                        FIND A <br/>
+                        JACK IN THE BOX <br/>
+                        NEAR YOU
+                    </h2>
+                    <button className={styles.findLocation}>
+                        FIND A LOCATION
+                    </button>
+                </div>
+            </div>
         </main>
     )
 }

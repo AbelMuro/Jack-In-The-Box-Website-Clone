@@ -6,22 +6,21 @@ import styles from './styles.module.css';
 function TextCarousel() {
 
     const updateSlideBasedOnDot = (e) => {
+        let newSlide;
         let clickedDot = e.target;
         let currentDot = document.querySelector("." + styles.currentDot);   
-        let moveSlideThisAmount = clickedDot.getAttribute("data-position");
-        let slideContainer = document.querySelector("." + styles.flexContainer);        
+        let currentSlide = document.querySelector("." + styles.currentSlide);          
+        let allDots = Array.from(document.querySelector("." + styles.dotNav).children);
         let allSlides = Array.from(document.querySelector("." + styles.flexContainer).children);
-        let currentSlide = document.querySelector("." + styles.currentSlide);     
+        let slideContainer = document.querySelector("." + styles.flexContainer);         
 
-        currentDot.classList.remove(styles.currentDot);
-        clickedDot.classList.add(styles.currentDot);
-        slideContainer.style.left = moveSlideThisAmount + "px";
-        currentSlide.classList.remove(styles.currentSlide);
         allSlides.forEach((slide) => {
             if(slide.getAttribute("data-position") == clickedDot.getAttribute("data-position"))
-                slide.classList.add(styles.currentSlide)
-        })
-
+                newSlide = slide;
+        })  
+        updateDots(currentDot, allDots, clickedDot);
+        updateSlides(currentSlide, newSlide, slideContainer);
+    
     }
 
     function updateSlides(currentSlide, nextOrPrevSlide, slideContainer) {

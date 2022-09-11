@@ -1,11 +1,71 @@
 .container{
     display: flex;
     width: 100%;
+    height: 84vh;
 }
 
-.guyLookingAtPhone{
-    background-image: url("./images/guy\ looking\ at\ phone.jpg");
+.flexItemOne{
+    background-image: url("./images/person looking at phone.jpg");
     background-size: cover;
+    background-position: center;
     flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexItemTwo{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jackDelivered, .jackApp, .deliveryPartner{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-align: center;
+}
+.jackApp{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+.deliveryPartner{
+    font-size: 1.5rem;
+}
+
+.delivery{
+    background-image: url("./images/deliveryImage.png");
+    background-size: cover;
+    background-position: center;
+    flex-basis: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blackButtons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    padding: 1.5rem;
+}
+.button{
+    object-fit: contain;
+    width: 150px;
+    cursor: pointer;
+}
+
+
+.deliveryPartner{
+    background-color: red;
+    flex-basis: 50%;
+    width: 100%;
 }
 

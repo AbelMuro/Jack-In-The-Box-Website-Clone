@@ -91,3 +91,10 @@
         font-size: 0.9rem;
     }
 }
+
+@media (max-width: 440px){
+    .title{
+        width: 320px;
+        font-size: 1.08rem;
+    }
+}

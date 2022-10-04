@@ -26,22 +26,22 @@ function NavigationBar() {
                     </Link>
                     <Link to="/food" className={styles.itemOne} onClick={selectedLink}>
                        <span className={styles.eventBubbling}> 
-                            <FontAwesomeIcon icon={faBurger}/> FOOD
+                            <FontAwesomeIcon icon={faBurger}/> <br className={styles.breakLine}/> FOOD
                        </span>
                     </Link>
                     <Link to="/OffersAndStuff" className={styles.itemTwo} onClick={selectedLink}>
                         <span className={styles.eventBubbling}> 
-                            <FontAwesomeIcon icon={faTag}/> OFFERS {"&"} STUFF
+                            <FontAwesomeIcon icon={faTag}/> <br className={styles.breakLine}/> OFFERS {"&"} STUFF
                         </span>
                     </Link>
                     <Link to="/Locations" className={styles.itemThree} onClick={selectedLink}> 
                         <span className={styles.eventBubbling}> 
-                            <FontAwesomeIcon icon={faLocationDot}/> LOCATION
+                            <FontAwesomeIcon icon={faLocationDot}/><br className={styles.breakLine}/> LOCATION
                         </span>
                     </Link>
                     <Link to="/Delivery" className={styles.itemFour} onClick={selectedLink}>
                         <span className={styles.eventBubbling}> 
-                            <FontAwesomeIcon icon={faCarSide}/> DELIVERY
+                            <FontAwesomeIcon icon={faCarSide}/><br className={styles.breakLine}/> DELIVERY
                         </span>
                     </Link>
                 </div>

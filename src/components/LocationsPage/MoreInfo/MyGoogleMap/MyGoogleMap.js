@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 function MyGoogleMap(props){
     const [map, setMap] = useState();
     const {isLoaded} = useLoadScript({
-        googleMapsApiKey: "AIzaSyDKBV38tvGIVBnogf0gP9YWwe-PHQXwh7w",
+        googleMapsApiKey: "AIzaSyDSJo88uqWG6bFiFqCXyIwW6iKHTn__eLA",
     })
 
 

@@ -8,7 +8,7 @@ import appStoreButton from './images/appStoreButton.png';
 import googlePlayButton from './images/googlePlayButton.png';
 
 
-function MoreInfo(props) {
+function MoreInfo() {
 
     return(
         <main className={styles.container}>
@@ -94,7 +94,7 @@ function MoreInfo(props) {
                 <TextCarousel/>
             </div>
             <div className={styles.flexItemEight}>
-                <MyGoogleMap address={props.address}/>
+                <MyGoogleMap/>
                 <div className={styles.findJackNearYou}>
                     <h2 className={styles.findJackTitle}>
                         FIND A <br/>

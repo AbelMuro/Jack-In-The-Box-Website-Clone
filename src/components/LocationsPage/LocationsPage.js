@@ -44,7 +44,7 @@ function LocationsPage(){
                 </header>
             </main>
             <FeaturedMenuItems/>   
-            <MoreInfo address={"5613 W 38TH ST INDIANAPOLIS, IN 462554"}/>     
+            <MoreInfo/>     
         </>
 
     )

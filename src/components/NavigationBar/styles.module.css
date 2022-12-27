@@ -65,6 +65,10 @@
     pointer-events: none;
 }
 
+.breakLine{
+    display: none;
+}
+
 
 /* new navigation bar that appears when user clicks on locations or delivery*/
 
@@ -99,4 +103,15 @@
     .itemThree, .itemFour{
         flex-basis: 120px;
     }    
+}
+
+@media (max-width: 520px) {
+
+    .foodMenu {
+        font-size: 0.75rem;
+    }
+
+    .breakLine{
+        display: block;
+    }
 }

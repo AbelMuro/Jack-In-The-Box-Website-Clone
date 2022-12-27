@@ -2,8 +2,10 @@ import React, {useEffect, useState, useRef} from 'react';
 import SocialMediaBar from './SocialMediaBar';
 import jackInTheBoxlogo from './images/jack in the box logo.png';
 import styles from "./styles.module.css";
+import {useMediaQuery} from 'react-responsive';
 
 function FooterNavigationBar() {
+    const mobile = useMediaQuery({query: "(max-width: 1000px)"});
     const [,forceRender] = useState(0);
     let display = useRef(false);
  
@@ -28,12 +30,25 @@ function FooterNavigationBar() {
     }
 
     useEffect(() => {
-        window.addEventListener("resize", checkViewportWidth)
+        window.addEventListener("resize", checkViewportWidth);
 
         return () => {
             window.removeEventListener("resize", checkViewportWidth)
         }
     })
+
+    //the event listener in the useEffect above only runs when the user resizes the window
+    //so when the user initially views the website in mobile, the footer nav bar will not appear
+    //the useEffect below will solve that problem
+    useEffect(() => {
+        if(mobile){
+            let logo = document.querySelector("." + styles.footerLogo);
+            logo.classList.remove(styles.disappear)
+            logo.classList.add(styles.appear);     
+            display.current = true;
+            forceRender(3);
+        }
+    }, [])
 
     return( //rememebr to put dissapear class next to footerLogo
         <>

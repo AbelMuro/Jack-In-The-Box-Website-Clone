@@ -115,5 +115,9 @@
     color: #545554;
 }
 
-@media(max-width: 1160px){
+@media(max-width: 440px){
+    .locationsTitle{
+        font-size: 30px;
+        width: 260px;
+    }
 }

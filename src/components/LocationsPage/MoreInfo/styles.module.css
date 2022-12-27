@@ -1,7 +1,7 @@
 .container{
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 .flexItemTwo, .flexItemThree, 
@@ -97,13 +97,13 @@
     font-weight: bold;
 }
 
-.listContainer li:before{
+.listItem:before{
     content: "";
     display: list-item;
     position: absolute;
 }
 
-.listContainer li {
+.listItem {
     width: 50%;
     display: inline-block
 }
@@ -141,6 +141,7 @@
     flex-basis: 70%;
     background-image: url("./images/red background.jpg");
     background-size: cover;
+    overflow: hidden;
 }
 
 
@@ -166,5 +167,18 @@
 
     .flexItemTwo, .flexItemSix{
         border-bottom: 2px solid #545554;
+    }
+}
+
+@media (max-width: 440px){
+    .greyBoxTitle{
+        font-size: 30px;
+    }
+    .listContainer{
+        font-size: 18px;
+    }
+
+    .findJackTitle{
+        font-size: 30px;
     }
 }

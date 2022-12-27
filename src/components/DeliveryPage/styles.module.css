@@ -114,3 +114,12 @@
         width: 170px;
     }
 }
+
+@media (max-width: 500px){
+    .deliveryApps{
+        width: 370px;
+    }
+    .appImages{
+        width: 150px;
+    }
+}
